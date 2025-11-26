@@ -22,9 +22,36 @@
 </head>
 
 <body class="">
+    <header class=" flex justify-between p-4 lg:px-15 border-b border-b-black/30">
+        <div class="flex items-center gap-3">
+            <div class="w-9 h-9  bg-laranja rounded flex justify-center items-center"><img src="images/icone.png"
+                    alt="Icone casa" class="block"></div>
+            <span class="text-x1 font-bold text-laranja">Aluga Web</span>
+        </div>
+        <a href="login.html"
+            class="leading-10 px-4 flex items-center gap-3 bg-laranja/20 rounded-md text-laranja fill-laranja duration-150 hover:bg-laranja hover:text-white hover:fill-white">
+            <box-icon name='user'></box-icon>
+            Entrar
+        </a>
+    </header>
 
-
-
+    <main>
+        <div class="mt-[100px] px-4 lg:px-0 lg:flex lg:h-[calc(100vh_-_180px)] lg:mt-0 lg:*:flex-1">
+            <div class="lg:flex lg:flex-col lg:justify-center lg:px-15">
+                <h2 class="text-center text-3xl font-extrabold mb-4 ">Onde você quer morar</h2>
+                <div class="border-3 border-laranja flex items-center pl-4 rounded-[40px]">
+                    <box-icon type='solid' name='map' class="fill-laranja"></box-icon>
+                    <input type="text" placeholder="Ex: Fortaleza" class="h-[75px] outline-none pl-4 flex-1">
+                    <div class="w-[63px] h-[63px] bg-laranja flex justify-center items-center rounded-full fill-white mr-[6px]">
+                        <box-icon name='search'></box-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <img src="images/mulher.png" alt="Foto mulher" class="block m-auto w-[270px] lg:w-auto lg:h-full pt-[50px]">
+            </div>
+        </div>
+    </main>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
