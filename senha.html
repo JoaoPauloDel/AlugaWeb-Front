@@ -4,35 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind</title>
+    <title>Aluga Web - Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+    <style type="text/tailwindcss">
+        *{
+            font-family: "Inter", sans-serif;
+        }
+        @theme {
+            --color-laranja: #E04300; 
+        } 
+    </style>
 </head>
 
-<body class="h-screen flex justify-center items-center bg-blue-200">
-    <form id="form" class="w-[300px] bg-white shadow-lg rounded-xl p-4">
-        <h2 class="text-2xl text-center text-blue-600 font-semibold mb-6">Redefinir Senha</h2>
+<body>
+    <div>
+        <div class="flex justify-center items-center mt-25">
+            <form class=" border border-[#00000020] w-[360px] h-[480px] bg-white shadow-lg rounded-xl p-4">
 
-        <label for="senha" class="text-xs uppercase font-bold block text-blue-600 mb-2">Digite sua nova senha</label>
-        <input id="senha" name="senha" type="password" placeholder="********"
-            class="w-full h-10 mb-4 border border-black/20 rounded pl-3 outline-2 outline-offset-2 outline-transparent focus:outline-blue-600 focus:border-blue-600 duration-150"
-            required>
+                <div class="flex justify-center items-center gap-2  m-6 mb-10">
+                    <div class="flex justify-center items-center w-9 h-9  bg-laranja rounded "><img
+                            src="images/icone.png" alt="Icone casa" class="block"></div>
+                    <div class="text-laranja font-bold text-xl">Aluga Web</div>
+                </div>
 
-        <label for="confirmar_senha" class="text-xs uppercase font-bold block text-blue-600 mb-2">Confirme sua nova
-            senha</label>
-        <input id="confirmar_senha" name="confirmar_senha" type="password" placeholder="********"
-            class="w-full h-10 mb-4 border border-black/20 rounded pl-3 outline-2 outline-offset-2 outline-transparent focus:outline-blue-600 focus:border-blue-600 duration-150"
-            required>
+                <label for="email" class="text-x  font-bold block text-[#00000090] mb-2">Digite sua nova senha</label>
+                <input id="email" type="text"
+                    class=" flex justify-center items-center  w-[320px] h-[52px] mb-4 border bg-gray-200 border-black/20 rounded-md pl-3 outline-2 outline-offset-2 outline-transparent focus:outline-black focus:border-black duration-150">
+                <label for="senha" class="mt-3 text-x font-bold block text-[#00000090] mb-2">Confirme sua nova senha</label>
+                <input id="senha" type="password"
+                    class=" flex justify-center items-center  w-[320px] h-[52px] mb-4 border bg-gray-200 border-black/20 rounded-md pl-3 outline-2 outline-offset-2 outline-transparent focus:outline-black focus:border-black duration-150">
 
-        <button type="submit"
-            class="block w-full h-10 bg-blue-600 rounded text-white duration-150 cursor-pointer hover:bg-blue-800 hover:scale-108 text-center leading-[40px]">Salvar</button>
-
-        <div id="error-message" class="text-red-600 mt-2 text-center hidden">
-            As senhas não coincidem!
+                <a class=" mb-5 block w-full h-10 bg-laranja rounded text-white duration-150 cursor-pointer hover:bg-[#e0430099] hover:scale-108 text-center leading-[40px]"
+                    href="login.html">Salvar</a>
+            </form>
         </div>
-    </form>
-
-    <script src="form-validation.js"></script>
+    </div>
+    <footer class="w-full h-full">
+        <div>
+            <h6 class="flex justify-center items-center mt-15 mb-10 text-laranja text-sm  mt-2">&copy2025 - Aluga
+                web,Todos os direitos reservados.</h6>
+        </div>
+    </footer>
 </body>
 
 </html>
