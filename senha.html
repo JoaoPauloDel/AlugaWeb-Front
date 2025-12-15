@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="h-screen flex justify-center items-center bg-blue-200">
+    <form id="form" class="w-[300px] bg-white shadow-lg rounded-xl p-4">
+        <h2 class="text-2xl text-center text-blue-600 font-semibold mb-6">Redefinir Senha</h2>
+
+        <label for="senha" class="text-xs uppercase font-bold block text-blue-600 mb-2">Digite sua nova senha</label>
+        <input id="senha" name="senha" type="password" placeholder="********"
+            class="w-full h-10 mb-4 border border-black/20 rounded pl-3 outline-2 outline-offset-2 outline-transparent focus:outline-blue-600 focus:border-blue-600 duration-150"
+            required>
+
+        <label for="confirmar_senha" class="text-xs uppercase font-bold block text-blue-600 mb-2">Confirme sua nova
+            senha</label>
+        <input id="confirmar_senha" name="confirmar_senha" type="password" placeholder="********"
+            class="w-full h-10 mb-4 border border-black/20 rounded pl-3 outline-2 outline-offset-2 outline-transparent focus:outline-blue-600 focus:border-blue-600 duration-150"
+            required>
+
+        <button type="submit"
+            class="block w-full h-10 bg-blue-600 rounded text-white duration-150 cursor-pointer hover:bg-blue-800 hover:scale-108 text-center leading-[40px]">Salvar</button>
+
+        <div id="error-message" class="text-red-600 mt-2 text-center hidden">
+            As senhas não coincidem!
+        </div>
+    </form>
+
+    <script src="form-validation.js"></script>
+</body>
+
+</html>
