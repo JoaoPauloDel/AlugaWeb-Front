@@ -20,24 +20,43 @@
         } 
     </style>
 </head>
-<body>
-<div>
-    <div class="flex justify-center items-center mt-45">
-        <form class="w-[300px] bg-white shadow-lg rounded-xl p-4">
-                <img src="images/icone-laranja.png" alt="" class="felx justify-center items-center ml-24">
-                aluga web
-        <h2 class="text-2xl text-center text-blue-600 font-semibold mb-6">Seja Bem-Vindo</h2>
-        <label for="email" class="text-xs uppercase font-bold block text-blue-600 mb-2">Email</label>
-        <input id="email" type="text" placeholder="email@email.com"
-            class="w-full h-10 mb-4 border border-black/20 rounded pl-3 outline-2 outline-offset-2 outline-transparent focus:outline-blue-600 focus:border-blue-600 duration-150">
-        <label for="senha" class="text-xs uppercase font-bold block text-blue-600 mb-2">Senha</label>
-        <input id="senha" type="password" placeholder="********"
-            class="w-full h-10 mb-4 border border-black/20 rounded pl-3 outline-2 outline-offset-2 outline-transparent focus:outline-blue-600 focus:border-blue-600 duration-150">
-        <a href="senha.html" class="text-xs block my-5 text-center hover:text-blue-600  no-underline hover:underline">Esqueci minha senha</a>
 
-        <a class="block w-full h-10 bg-blue-600 rounded text-white duration-150 cursor-pointer hover:bg-blue-800 hover:scale-108 text-center leading-[40px]" href="home.html">Entrar</a>
-    </form>
-    </div>
-</div>
+<body>
+    <div>
+        <div class="flex justify-center items-center mt-25">
+            <form class=" border border-[#00000020] w-[360px] h-[480px] bg-white shadow-lg rounded-xl p-4">
+
+                <div class="flex justify-center items-center gap-2  m-6 mb-10">
+                    <div class="flex justify-center items-center w-9 h-9  bg-laranja rounded "><img src="images/icone.png"
+                            alt="Icone casa" class="block"></div>
+                            <div class="text-laranja font-bold text-xl">Aluga Web</div>
+                </div>
+
+                <label for="email" class="text-x  font-bold block text-[#00000090] mb-2">Email</label>
+                <input id="email" type="text"
+                    class=" flex justify-center items-center  w-[320px] h-[52px] mb-4 border bg-gray-200 border-black/20 rounded-md pl-3 outline-2 outline-offset-2 outline-transparent focus:outline-black focus:border-black duration-150">
+                <label for="senha" class="mt-3 text-x font-bold block text-[#00000090] mb-2">Senha</label>
+                <input id="senha" type="password"
+                    class=" flex justify-center items-center  w-[320px] h-[52px] mb-4 border bg-gray-200 border-black/20 rounded-md pl-3 outline-2 outline-offset-2 outline-transparent focus:outline-black focus:border-black duration-150">
+                <div class="flex justify-between">
+                    <a href="senha.html"
+                        class="  text-xs font-extrabold my-5 text-start hover:text-black no-underline hover:underline">Esqueci
+                        minha senha</a>
+                    <a href="senha.html"
+                        class="  text-xs font-extrabold  my-5 text-start hover:text-black  no-underline hover:underline">Criar
+                        conta</a>
+                </div>
+
+                <a class=" mb-5 block w-full h-10 bg-laranja rounded text-white duration-150 cursor-pointer hover:bg-[#e0430099] hover:scale-108 text-center leading-[40px]"
+                    href="home.html">Entrar</a>
+                </form>
+            </div>
+        </div>
+        <footer class="w-full h-full">
+            <div>
+                <h6 class="flex justify-center items-center mt-15 mb-10 text-laranja text-sm  mt-2">&copy2025 - Aluga web,Todos os direitos reservados.</h6>
+            </div>
+        </footer>
 </body>
+
 </html>
