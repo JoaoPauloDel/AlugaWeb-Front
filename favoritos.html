@@ -29,31 +29,44 @@
 </head>
 
 <body class="">
-    <header class="flex justify-between p-4 lg:px-15 border-b border-b-black/15">
-        <!-- LOGO -->
+    <header class="flex justify-between items-center p-4 lg:px-15 border-b border-b-black/30 bg-white">
+
         <div class="flex items-center gap-3">
+            <div
+                class="lg:hidden leading-10 px-1 flex justify-center items-center rounded-md duration-150 hover:bg-[#e0430020] hover:text-white hover:fill-white">
+                <button onclick="menu()">
+                    <img src="images/menu-icone.png" alt="Menu">
+                </button>
+            </div>
+
             <div class="w-9 h-9 bg-laranja rounded flex justify-center items-center">
-                <img src="images/icone.png" alt="" class="block">
+                <img src="images/icone.png" alt="Icone casa" class="block">
             </div>
             <span class="text-xl font-bold text-laranja">Aluga Web</span>
         </div>
+        <a href="#"
+            class="lg:hidden leading-10 px-4 flex justify-center items-center rounded-md duration-150 hover:bg-[#e0430020]">
+            <img src="images/lareral-icone.png" alt="Filtro">
+        </a>
 
-        <div class="flex gap-2 lg:gap-10">
-            <!-- FAVORITO -->
-            <div class="flex items-center text-cinza gap-1 font-semibold">
-                <img src="images/favorito.png" class="h-4">
+        <div class="hidden lg:flex gap-2 lg:gap-10">
+
+            <div
+                class="flex items-center text-cinza gap-1 font-semibold cursor-pointer hover:text-laranja transition-colors">
+                <img src="images/favorito.png" class="h-4" alt="Favoritos">
                 <p>Favoritos</p>
             </div>
 
-            <!-- PERFIL -->
-            <div class="flex  items-center gap-3">
-                <div class=" flex flex-col items-end">
-                    <p class="text-laranja font-semibold ">Silvio Santos</p>
-                    <p class="text-cinza text-xs">Sair</p>
+            <div class="flex items-center gap-3 cursor-pointer">
+                <div class="flex flex-col items-end">
+                    <p class="text-laranja font-semibold">Silvio Santos</p>
+                    <p class="text-cinza text-xs hover:underline">Sair</p>
                 </div>
-                <img src="images/Silvio-foto.png" alt="">
+                <img src="images/Silvio-foto.png" alt="Foto Perfil"
+                    class="h-10 w-10 rounded-full object-cover border border-gray-200">
             </div>
         </div>
+
     </header>
 
     <main>
